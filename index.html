@@ -15,30 +15,40 @@
                 <button type="button" class="btn btn-primary btn-lg">View Pink Leaderboard</button>
             </div>
             <div>
-                <p id="clock">Clock: </p>
+                <p id="clock">Clock:</p>
             </div>
         </div>
         <h1 class="title">Pink Quiz</h1>
     </header>
 
         <div class="card" id="homepage-card">
-            <p>Answer all questions within a minute! Wrong answers lose time. Your time is your score. GO!</p>
-            <button type="button" class="btn btn-default btn-lg" id="Start-Btn">Start</button>
+            <p class="homepage">Answer all questions within a minute! Wrong answers lose time. Your time is your score. GO!</p>
+            <button type="button" class="btn btn-default btn-lg" id="Start-Btn">Start The Quiz!</button>
         </div>
       
             <div class="card" id="quiz-card" >
                 <div class = "answer-choice-container" id="answer-choice-container">
-                    <button type="button" class="btn btn-default btn-lg" id="buttonA">A</button>
-                    <button type="button" class="btn btn-default btn-lg" id="buttonB">B</button>
-                    <button type="button" class="btn btn-default btn-lg" id="buttonC">C</button>
-                    <button type="button" class="btn btn-default btn-lg" id="buttonD">D</button>
+                    <ul>
+                        <button type="button" class="btn btn-default btn-lg" id="buttonA" value="A">A</button>
+                        <button type="button" class="btn btn-default btn-lg" id="buttonB" value="B">B</button>
+                        <button type="button" class="btn btn-default btn-lg" id="buttonC" value="C">C</button>
+                        <button type="button" class="btn btn-default btn-lg" id="buttonD" value="D">D</button>
+                    </ul>
+                    
+                </div>
+            </div>
+
+            <div class="card" id="finish-page-card">
+                <div class="finish-container">
+                    <p>Congratulations! Enter Name Below!</p>
+                    <input type="textbox" id="">
+                    <button type="button" class="btn btn-default btn-lg" id="EndButton">View High Scores</button>
                 </div>
             </div>
 
             <div class="card" id="highscore-card" >
                 <div>
                     <h2 class="highscore-title">High Scores</h2>
-                    
                 </div>
             </div>
 
