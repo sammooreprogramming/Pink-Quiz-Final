@@ -38,20 +38,22 @@ let questionsArray = [
     let timeRemaining = 60;
 // index variables
     let questionNumber = 0;
-    
 
-// on start button begin quiz and start countdown timer
-startButton.addEventListener("click", startQuiz, formatQuiz);
+    
+//display the homepage to begin!
+    displayHomepage();
+
+// event listeners for the start button & the answer choices
+startButton.addEventListener("click", startQuiz);
 A.addEventListener("click", renderChoiceA);
 B.addEventListener("click", renderChoiceB);
 C.addEventListener("click", renderChoiceC);
 D.addEventListener("click", renderChoiceD);
 
+    
+// The function below formats the quiz and starts the clock, as well as displays the first question.
 function startQuiz () {
-        homepage.style.display = "none";
-        highscore.style.display = "none";
-        endPage.style.display = "none";
-        quiz.style.display = "block";
+        displayQuiz();
     let clockLeft = setInterval(function () {
         timeRemaining--;
         clock.textContent = `Time: ${timeRemaining} seconds left!`;
@@ -62,9 +64,34 @@ function startQuiz () {
     }, 1000);
 };
 
-function formatQuiz () {
-       
-};
 
 
-startQuiz();
+
+function displayHomepage () {
+    homepage.style.display = "block";
+    highscore.style.display = "none";
+    endPage.style.display = "none";
+    quiz.style.display = "none";
+}
+
+function displayHighscore () {
+    homepage.style.display = "none";
+    highscore.style.display = "block";
+    endPage.style.display = "none";
+    quiz.style.display = "none";
+}
+
+function displayEndPage () {
+    homepage.style.display = "none";
+    highscore.style.display = "none";
+    endPage.style.display = "block";
+    quiz.style.display = "none";
+}
+
+function displayQuiz () {
+    homepage.style.display = "none";
+    highscore.style.display = "none";
+    endPage.style.display = "none";
+    quiz.style.display = "block";
+}
+
