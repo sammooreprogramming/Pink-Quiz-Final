@@ -10,9 +10,7 @@ header {
  background-color: grey;
 }
 
-#quiz-card {
 
-}
 
 #finish-page-card {
     background-color: blue;
@@ -22,6 +20,6 @@ header {
     background-color: brown;
 }
 
-p#clock {
+#clock {
     text-align: right;
 }

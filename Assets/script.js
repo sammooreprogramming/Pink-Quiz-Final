@@ -1,5 +1,5 @@
 // Questions Array
-let questions = [
+let questionsArray = [
     {
         question: "The div element is what exactly?",
         choices: ["A a container", "B a divider", "C a function", "D a page"],
@@ -19,7 +19,7 @@ let questions = [
         question: "What does the var command do?",
         choices: ["A  creates a document", "B creates a variable", "C creates a function", "creates parameters"],
         answer: "B creates a variable"
-    }]
+    }];
     
 // define variables for cards to display later
     const homepage = document.querySelector("#homepage-card");
@@ -32,55 +32,39 @@ let questions = [
     let B = document.querySelector ("#B");
     let C = document.querySelector ("#C");
     let D = document.querySelector ("#D");
-
-//time variables for function use
+// time variables for function use
     let clock = document.querySelector( "#clock") 
-    let timer = document.getElementById("homepage")
+    let home = document.getElementById("homepage")
     let timeRemaining = 60;
-    let numberOfQuestion = 0;
-    let counterOfQuestion = 1;
+// index variables
+    let questionNumber = 0;
     
-// All functions for logic
-// startGame();
-// endGame();
-// startButton();
-//
-
-
-
 
 // on start button begin quiz and start countdown timer
-function startGame() {
-    let varInterval = setInterval(function() {
+startButton.addEventListener("click", startQuiz, formatQuiz);
+A.addEventListener("click", renderChoiceA);
+B.addEventListener("click", renderChoiceB);
+C.addEventListener("click", renderChoiceC);
+D.addEventListener("click", renderChoiceD);
+
+function startQuiz () {
+        homepage.style.display = "none";
+        highscore.style.display = "none";
+        endPage.style.display = "none";
+        quiz.style.display = "block";
+    let clockLeft = setInterval(function () {
         timeRemaining--;
-        timer.textContent = "Time Remaining: " + timeRemaining + " seconds";
+        clock.textContent = `Time: ${timeRemaining} seconds left!`;
     
-        if (timeRemaining <= 0) {
-          clearInterval(varInterval);
-          timer.textContent = "TIME! Please enter initials below and view highscores!";
-          endGame();
-        }
-    
-        else if (counterOfQuestion >= questions.length) {
-            clearInterval(varInterval);
-            endgame();
-          }
-        }, 1000);
-}
-///////////////////
-startButton () {
-    homepage.style.display = "none";
-    quiz.style.display = "block";
-    numberOfQuestion = 0;
-    startQuiz();
-    readQuestion(numberOfQuestion);
-}
+        if (timeRemaining === 0) {
+            clearInterval(clockLeft);
+        };
+    }, 1000);
+};
 
-function readQuestion (x) {
-    
-    }
+function formatQuiz () {
+       
+};
 
-// all logic //
 
-//set time left as the score and display this with text.Content()
-
+startQuiz();
