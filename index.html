@@ -18,27 +18,27 @@
                 <p id="clock"></p>
             </div>
         </div>
-        <h1 class="title">Pink Quiz</h1>
+        <h1 class="title">Pink Coding Quiz</h1>
     </header>
 
-        <div class="card" id="homepage-card">
+        <div class="hide" id="homepage-card">
             <p class="homepage">Answer all questions within a minute! Wrong answers lose time. Your time is your score. GO!</p>
-            <button type="button" class="btn btn-default btn-lg" id="Start-Btn">Start The Quiz!</button>
+            <button onclick="startQuiz();" type="button" class="btn btn-default btn-lg" id="Start-Btn">Start The Quiz!</button>
         </div>
       
-            <div class="card" id="quiz-card" >
+            <div class="hide" id="quiz-card" >
                 <div class = "answer-choice-container" id="answer-choice-container">
                     <ul>
-                        <button type="button" class="btn btn-default btn-lg" id="buttonA" value="A">A</button>
-                        <button type="button" class="btn btn-default btn-lg" id="buttonB" value="B">B</button>
-                        <button type="button" class="btn btn-default btn-lg" id="buttonC" value="C">C</button>
-                        <button type="button" class="btn btn-default btn-lg" id="buttonD" value="D">D</button>
+                        <button onclick="renderChoiceA();" type="button" class="btn btn-default btn-lg" id="buttonA" value="A">A</button>
+                        <button onclick="renderChoiceB();" type="button" class="btn btn-default btn-lg" id="buttonB" value="B">B</button>
+                        <button onclick="renderChoiceC();" type="button" class="btn btn-default btn-lg" id="buttonC" value="C">C</button>
+                        <button onclick="renderChoiceD();" type="button" class="btn btn-default btn-lg" id="buttonD" value="D">D</button>
                     </ul>
                     
                 </div>
             </div>
 
-            <div class="card" id="finish-page-card">
+            <div class="hide" id="finish-page-card">
                 <div class="finish-container">
                     <p>Congratulations! Enter Name Below!</p>
                     <input type="textbox" id="">
@@ -46,7 +46,7 @@
                 </div>
             </div>
 
-            <div class="card" id="highscore-card" >
+            <div class="hide" id="highscore-card" >
                 <div>
                     <h2 class="highscore-title">High Scores</h2>
                 </div>

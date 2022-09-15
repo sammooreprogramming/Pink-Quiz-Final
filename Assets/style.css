@@ -7,17 +7,16 @@ header {
 }
 
 #homepage-card {
- background-color: grey;
+ background-color: pink;
 }
-
 
 
 #finish-page-card {
-    background-color: blue;
+    background-color:pink;
 }
 
 #highscore-card {
-    background-color: brown;
+    background-color: pink;
 }
 
 #clock {

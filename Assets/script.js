@@ -3,23 +3,23 @@ let questionsArray = [
     {
         question: "The div element is what exactly?",
         choices: ["A a container", "B a divider", "C a function", "D a page"],
-        correct: "A a container"
+        correct: A
         
     },
     {
         question: "What symbol represents a terminator?",
         choices: ["A a ';'", "B a '%'", "C a '&'", "D a '*'"],
-        correct: "A a ';'"
+        correct: A
     },
     {
         question: "I'm glad I have _______ to apply the functionality.",
         choices: ["A HTML", "B CSS", "C  Javascript", "D Java"],
-        correct: "C Javascript"
+        correct: C
     },
     {
         question: "What does the var command do?",
         choices: ["A  creates a document", "B creates a variable", "C creates a function", "creates parameters"],
-        correct: "B creates a variable"
+        correct: B
     }];
     
 // define variables for cards to display later
@@ -39,15 +39,66 @@ let questionsArray = [
     let timeRemaining = 60;
 // index variables
     let questionNumber = 0;
+    let liveClock;
+    let correctChoice;
+    
+// 
+    function startQuiz() {
 
-// event listeners for the start button & the answer choices
-A.addEventListener("click", renderChoiceA);
-B.addEventListener("click", renderChoiceB);
-C.addEventListener("click", renderChoiceC);
-D.addEventListener("click", renderChoiceD);
+    };
 
-startButton.addEventListener("click", startQuiz);
 
-// functions
+    function renderChoices() {
 
+        renderChoiceA() {
+            if (choice === A && A === correct) {
+                quiz.innerHTML = "Correct choice!";
+        } else {
+            quiz.innerHTML = "Incorrect choice!";
+        }
+    }
+
+        renderChoiceB() {
+            if (choice === B && B === correct) {
+                quiz.innerHTML = "Correct choice!";
+        } else {
+            quiz.innerHTML = "Incorrect choice!";
+        }
+    }
+
+        renderChoiceC() {
+            if (choice === C && C === correct) {
+                quiz.innerHTML = "Correct choice!";
+        } else {
+            quiz.innerHTML = "Incorrect choice!";
+        }
+    }
+
+        renderChoiceD() {
+            if (choice === D && D === correct) {
+                quiz.innerHTML = "Correct choice!";
+        } else {
+            quiz.innerHTML = "Incorrect choice!";
+        }
+    }
+};
+
+
+
+
+
+
+
+
+function renderChoiceA() {
+}
+
+function renderChoiceB() {
+}
+
+function renderChoiceC() {
+}
+
+function renderChoiceD() {
+}
 
