@@ -9,51 +9,55 @@
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div>
-                <button type="button" class="btn btn-primary btn-lg">View Pink Leaderboard</button>
-            </div>
-            <div>
-                <p id="clock"></p>
-            </div>
+<section id="Homepage" class="homepage">
+    <div id="homepage-container" class="card">
+        <h2>Pink Coding Quiz</h2>
+        <br>
+        <p>Welcome to the Lovely Pink Coding Quiz!</p>
+        <br>
+        <p>The clock starts at 60 seconds, wrong answers lose 5 seconds, and your score is your time remaining!</p>
+        <br>
+        <div id="center-homepage-container" class="container">
+            <button type="button" id="Start-Btn" class="button">Start Pink Coding Quiz!</button>
         </div>
-        <h1 class="title">Pink Coding Quiz</h1>
-    </header>
-
-        <div class="hide" id="homepage-card">
-            <p class="homepage">Answer all questions within a minute! Wrong answers lose time. Your time is your score. GO!</p>
-            <button onclick="startQuiz();" type="button" class="btn btn-default btn-lg" id="Start-Btn">Start The Quiz!</button>
-        </div>
-      
-            <div class="hide" id="quiz-card" >
-                <div class = "answer-choice-container" id="answer-choice-container">
-                    <ul>
-                        <button onclick="renderChoiceA();" type="button" class="btn btn-default btn-lg" id="buttonA" value="A">A</button>
-                        <button onclick="renderChoiceB();" type="button" class="btn btn-default btn-lg" id="buttonB" value="B">B</button>
-                        <button onclick="renderChoiceC();" type="button" class="btn btn-default btn-lg" id="buttonC" value="C">C</button>
-                        <button onclick="renderChoiceD();" type="button" class="btn btn-default btn-lg" id="buttonD" value="D">D</button>
-                    </ul>
-                    
-                </div>
-            </div>
-
-            <div class="hide" id="finish-page-card">
-                <div class="finish-container">
-                    <p>Congratulations! Enter Name Below!</p>
-                    <input type="textbox" id="">
-                    <button type="button" class="btn btn-default btn-lg" id="EndButton">View High Scores</button>
-                </div>
-            </div>
-
-            <div class="hide" id="highscore-card" >
-                <div>
-                    <h2 class="highscore-title">High Scores</h2>
-                </div>
-            </div>
-
-
+    </div>
+</section>
        
+
+<section id="Quiz" class="quiz">
+    <div id="quiz-container" class="card">
+        <br>
+        <h2>Coding Quiz</h2>
+        <br>
+        <p>QUESTIONS</p>
+        <ul>
+            <li><button type="button" id="Abutton" class="button">A</button></li>
+            <div id="A-button-text-container">
+                <p>ANSWER CHOICE A</p>
+            </div>
+            <li><button type="button" id="Bbutton" class="button">B</button></li>
+            <div id="A-button-text-container">
+                <p>ANSWER CHOICE B</p>
+            </div>
+            <li><button type="button" id="Cbutton" class="button">C</button></li>
+            <div id="A-button-text-container">
+                <p>ANSWER CHOICE C</p>
+            </div>
+            <li><button type="button" id="Dbutton" class="button">D</button></li>
+            <div id="A-button-text-container">
+                <p>ANSWER CHOICE D</p>
+            </div>
+        </ul>
+        <br>
+        <p>CORRECT/INCORRECT</p>
+    </div>
+</section>
+
+<section id="Endpage" class="endpage">
+    <div id="endpage-container" class="card">
+        
+    </div>
+</section>
     <script src="./Assets/script.js"></script>
 </body>
 </html>

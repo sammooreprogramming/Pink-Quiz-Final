@@ -1,24 +1,48 @@
-.container {
-    background-color: pink;
+.card {
+    border: 3px solid red;
+    
 }
 
-header {
-    background-color: pink;
+.button {
+  border: none;  
+  padding: 7px 28px; 
 }
 
-#homepage-card {
+#Homepage {
  background-color: pink;
 }
 
+#Endpage {
+   background-color:aqua
+}
 
-#finish-page-card {
+#Quiz {
     background-color:pink;
 }
 
-#highscore-card {
-    background-color: pink;
+#Leaderboard {
+    background-color: red;
+    display: 'none';
 }
 
 #clock {
     text-align: right;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    font-size: larger;
+    text-align: center;
+}
+
+
+
+
+#center-homepage-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
